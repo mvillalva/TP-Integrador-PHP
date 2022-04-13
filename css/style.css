@@ -1,21 +1,15 @@
-:root{
-  --light-green : rgb(150, 201, 62);
-  --green : rgb(43, 167, 69);
+:root {
+  --light-green: rgb(150, 201, 62);
+  --green: rgb(43, 167, 69);
   --gray: rgb(51, 58, 64);
   --blue: #1d3947;
 }
 
-.banner-position {
-  margin-bottom: 70px !important;
-  top: 60px;
-  height: 100vh;
-}
-
-.img-brand{
+.img-brand {
   height: 60px;
 }
 
-.navbar{
+.navbar {
   z-index: 100;
 }
 
@@ -35,29 +29,42 @@
   background-color: var(--green);
 }
 
+.banner-img {
+  width: 100%;
+  min-height: 100vh;
+  background: url(/img/ba1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner-position {
+  margin-bottom: 70px !important;
+  top: 60px;
+  height: 100vh;
+}
+
+.bg-opaco {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
 .encabezado {
   top: 44%;
   color: white;
-  
 }
 
-.encabezado-parrafo {  
+.encabezado-parrafo {
   font-weight: 500;
-  white-space: pre-line;  
+  white-space: pre-line;
 }
 
 .img-position {
   position: relative;
   height: 100vh;
   object-fit: cover;
-}
-
-.bg-opaco {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .bg-blue {
@@ -86,9 +93,9 @@
 }
 
 .text-dotted {
-  border-bottom:2px dotted #222222;
-  color:#333333;
-  text-decoration:none;
+  border-bottom: 2px dotted #222222;
+  color: #333333;
+  text-decoration: none;
 }
 
 .img-fit-cover {
@@ -99,20 +106,9 @@
   .pe-sm-6 {
     padding-right: 6rem !important;
   }
-
-  .banner-position {
-    top: 0 !important;
-    height: auto;
-    margin-bottom: auto;
-  }
-
-  .img-position {   
-    height: auto;
-    object-fit: auto;
-  }
-
-  .encabezado {   
-    top: 44%;    
+  
+  .encabezado {
+    top: 44%;
   }
 }
 
