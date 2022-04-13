@@ -130,9 +130,10 @@ footer a:hover {
   width: 180px;
   padding: 5px 0;
   margin-left: -90px;
-  background-color: var(--gray);
   color: #fff;
   text-align: center;
+  font-size: small;
+  background-color: var(--gray);
   border-radius: 6px;
   visibility: hidden;
   z-index: 1;
