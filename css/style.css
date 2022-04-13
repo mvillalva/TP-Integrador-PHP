@@ -5,6 +5,12 @@
   --blue: #1d3947;
 }
 
+.banner-position {
+  margin-bottom: 70px !important;
+  top: 60px;
+  height: 100vh;
+}
+
 .img-brand{
   height: 60px;
 }
@@ -26,10 +32,7 @@
 }
 
 .encabezado {
-  position: absolute;
   top: 44%;
-  right: 120px;
-  text-align: end;
   color: white;
   z-index: 2;  
 }
@@ -40,7 +43,9 @@
 }
 
 .img-position {
-  position: relative;  
+  position: relative;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .bg-banner {  
@@ -96,8 +101,33 @@
   object-fit: cover;
 }
 
+@media (min-width: 768px) {
+  .pe-sm-6 {
+    padding-right: 6rem !important;
+  }
+
+  .banner-position{
+    top: 0 !important;
+    height: auto;
+    margin-bottom: auto;
+  }
+
+  .img-position {   
+    height: auto;
+    object-fit: auto;
+  }
+
+  .encabezado {   
+    top: 44%;    
+  }
+}
+
 @media (min-width: 992px) {
   .w-md-60 {
     width: 60% !important;
+  }
+
+  .top-md-0 {
+    top: 0 !important;
   }
 }
