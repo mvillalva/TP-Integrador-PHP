@@ -12,7 +12,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark nav-color ps-sm-5 pe-sm-5 position-fixed w-100" aria-label="Tenth navbar example">    
       <div class="container-fluid">      
-        <a class="navbar-brand" href="#"><img class="img-brand" src="img/codoacodo.png" alt=""> Conf Bs As</a>
+        <a class="navbar-brand" href="/"><img class="img-brand" src="img/codoacodo.png" alt=""> Conf Bs As</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsCodo" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,16 +20,16 @@
         <div class="collapse navbar-collapse justify-content-md-end" id="navbarsCodo">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#">La conferencia</a>
+              <a class="nav-link active" href="#conferencia">La conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Los oradores</a>
+              <a class="nav-link" href="#oradores">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">El Lugar y la fecha</a>
+              <a class="nav-link " href="#lugar">El Lugar y la fecha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Convíertete en orador</a>
+              <a class="nav-link " href="#conviertete">Convíertete en orador</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-green" href="#">Comprar tickets</a>
@@ -41,7 +41,7 @@
   </header>
 
   <main>
-    <section class="position-relative banner-position">
+    <section id="conferencia" class="position-relative banner-position">
       <img src="img/ba1.jpg" class="img-fluid img-position" alt="">
       <div class="bg-opaco"></div>
       <div class="position-absolute d-flex flex-column align-items-center align-items-sm-end pe-1 pe-sm-6 w-100 encabezado">
@@ -55,13 +55,13 @@
           </p>          
         </div>
         <div class="encabezado-botones">
-          <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
+          <a href="#conviertete" class="btn btn-outline-light">Quiero ser orador</a>
           <a href="#" class="btn btn-success bg-green">Comprar tickets</a>
         </div>
       </div>
     </section>
     
-    <section class="mt-4">
+    <section id="oradores" class="mt-4">
       <p class="text-uppercase text-center">Conoce a los</p>
       <h3 class="text-uppercase text-center">Oradores</h3>
       <div class="d-flex justify-content-center align-items-center align-items-md-start flex-column flex-md-row">
@@ -95,7 +95,7 @@
       </div>
     </section> 
 
-    <section class="mt-4">
+    <section id="lugar" class="mt-4">
       <div class="d-flex flex-column flex-md-row">
         <div class="col-12 col-md-6 pe-md-1 pe-0">
           <img src="img/honolulu.jpg" class="w-100 h-100 img-fit-cover" alt="honolulu">
@@ -109,7 +109,7 @@
       </div>
     </section>
 
-    <section class="mt-4">
+    <section id="conviertete" class="mt-4">
       <p class="text-uppercase text-center">Conviértete en un</p>
       <h3 class="text-uppercase text-center">Orador</h3>
       <p class="text-center">Anótate como orador para dar una <a href="#" class="text-dotted">charla ignite</a>. Cuéntanos de qué quieres hablar!</p>
