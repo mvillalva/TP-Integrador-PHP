@@ -1,8 +1,11 @@
 :root {
   --light-green: rgb(150, 201, 62);
+  --light-green-1: rgb(112, 150, 46);
   --green: rgb(43, 167, 69);
+  --green-h: rgb(32, 121, 51);
   --gray: rgb(51, 58, 64);
   --blue: #1d3947;
+  --blue_g: linear-gradient(90deg, #1c3643, #1e5372);
 }
 
 .img-brand {
@@ -25,8 +28,14 @@
   color: var(--light-green) !important;
 }
 
-.bg-green {
+.btn-green {
+  color: white;
   background-color: var(--green);
+}
+
+.btn-green:hover {
+  color: white;
+  background-color: var(--green-h);
 }
 
 .banner-img {
@@ -67,8 +76,17 @@
   object-fit: cover;
 }
 
-.bg-blue {
-  background-color: var(--blue);
+.bg-blue {  
+  background: var(--blue_g);
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: darkgrey;
 }
 
 .footer-size {
@@ -84,8 +102,12 @@
   padding: 0;
 }
 
-.bg-light-green {
+.btn-light-green {
   background-color: var(--light-green);
+}
+
+.btn-light-green:hover {
+  background-color: var(--light-green-1);
 }
 
 .font-size-lg {
@@ -100,6 +122,12 @@
 
 .img-fit-cover {
   object-fit: cover;
+}
+
+#oradores, 
+#lugar,
+#conviertete {
+  scroll-margin-block-start: 90px;
 }
 
 @media (min-width: 768px) {
