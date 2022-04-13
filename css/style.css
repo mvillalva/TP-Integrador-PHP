@@ -48,15 +48,6 @@
   object-fit: cover;
 }
 
-.bg-banner {  
-  max-width: 100%;
-  height: auto;
-  background-image: url('../img/ba1.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: -10% -10%;
-}
-
 .bg-opaco {
   position: absolute;
   top: 0;
@@ -106,7 +97,7 @@
     padding-right: 6rem !important;
   }
 
-  .banner-position{
+  .banner-position {
     top: 0 !important;
     height: auto;
     margin-bottom: auto;
