@@ -1,0 +1,103 @@
+:root{
+  --light-green : rgb(150, 201, 62);
+  --green : rgb(43, 167, 69);
+  --gray: rgb(51, 58, 64);
+  --blue: #1d3947;
+}
+
+.img-brand{
+  height: 60px;
+}
+
+.navbar{
+  z-index: 100;
+}
+
+.nav-color {
+  background-color: var(--gray);
+}
+
+.text-green {
+  color: var(--green) !important;
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.encabezado {
+  position: absolute;
+  top: 44%;
+  right: 120px;
+  text-align: end;
+  color: white;
+  z-index: 2;  
+}
+
+.encabezado-parrafo {  
+  font-weight: 500;
+  white-space: pre-line;  
+}
+
+.img-position {
+  position: relative;  
+}
+
+.bg-banner {  
+  max-width: 100%;
+  height: auto;
+  background-image: url('../img/ba1.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -10% -10%;
+}
+
+.bg-opaco {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.footer-size {
+  min-height: 80px;
+}
+
+.pre-line {
+  white-space: pre-line;
+}
+
+.card {
+  width: 18rem;
+  padding: 0;
+}
+
+.bg-light-green {
+  background-color: var(--light-green);
+}
+
+.font-size-lg {
+  font-size: 1.3rem;
+}
+
+.text-dotted {
+  border-bottom:2px dotted #222222;
+  color:#333333;
+  text-decoration:none;
+}
+
+.img-fit-cover {
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .w-md-60 {
+    width: 60% !important;
+  }
+}
