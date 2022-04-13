@@ -27,6 +27,10 @@
   color: var(--green) !important;
 }
 
+.text-green:hover {
+  color: var(--light-green) !important;
+}
+
 .bg-green {
   background-color: var(--green);
 }
