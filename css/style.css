@@ -115,9 +115,42 @@ footer a:hover {
 }
 
 .text-dotted {
+  position: relative;
+  display: inline-block;
   border-bottom: 2px dotted #222222;
   color: #333333;
   text-decoration: none;
+  cursor: default;
+}
+
+.text-dotted .tooltiptext {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  width: 180px;
+  padding: 5px 0;
+  margin-left: -90px;
+  background-color: var(--gray);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.text-dotted:hover .tooltiptext {
+  visibility: visible;
+}
+
+.text-dotted .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--gray) transparent transparent transparent;
 }
 
 .img-fit-cover {
