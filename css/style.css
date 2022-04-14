@@ -94,7 +94,7 @@ footer a:hover {
 }
 
 .pre-line {
-  white-space: pre-line;
+  white-space: normal;
 }
 
 .card {
@@ -164,7 +164,14 @@ footer a:hover {
   scroll-margin-block-start: 90px;
 }
 
+@media (min-width: 576px) {
+  .pre-line {
+    white-space: pre-line !important;
+  }
+}
+
 @media (min-width: 768px) {
+
   .pe-sm-6 {
     padding-right: 6rem !important;
   }
