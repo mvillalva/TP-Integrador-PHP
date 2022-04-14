@@ -1,18 +1,15 @@
-window.addEventListener('load', () => {
+const links = document.querySelectorAll('[data-tipo=item-menu]');
+const sections = document.querySelectorAll('section');
 
-  let items = document.querySelectorAll('[data-tipo=item-menu]')
+const changeLinkState = () => {
+  let index = sections.length;
+
+  while(--index && window.scrollY +110 < sections[index].offsetTop) {}
   
-  items.forEach((e) => {
+  links.forEach((link) => link.classList.remove('active'));
+  links[index].classList.add('active');
+}
 
-    e.addEventListener('click', t => {
+changeLinkState();
 
-      document.querySelectorAll('[data-tipo=item-menu]').forEach( e => e.classList.remove('active') )
-      t.target.classList.add('active')
-
-    })
-
-  })
-
-}, false);
-
-
+window.addEventListener('scroll', changeLinkState);
