@@ -3,6 +3,7 @@
   --light-green-1: rgb(112, 150, 46);
   --green: rgb(43, 167, 69);
   --green-h: rgb(32, 121, 51);
+  --green-f: rgba(4, 144, 43, 0.7);
   --gray: rgb(51, 58, 64);
   --blue: #1d3947;
   --blue_g: linear-gradient(90deg, #1c3643, #1e5372);
@@ -36,6 +37,11 @@
 .btn-green:hover {
   color: white;
   background-color: var(--green-h);
+}
+
+.btn-green:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--green-f);
 }
 
 .banner-img {
@@ -171,7 +177,6 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
-
   .pe-sm-6 {
     padding-right: 6rem !important;
   }
