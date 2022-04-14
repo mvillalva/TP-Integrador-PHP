@@ -41,7 +41,7 @@
 .banner-img {
   width: 100%;
   min-height: 100vh;
-  background: url('../img/ba1.jpg');
+  background: url("../img/ba1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,7 +76,7 @@
   object-fit: cover;
 }
 
-.bg-blue {  
+.bg-blue {
   background: var(--blue_g);
 }
 
@@ -127,9 +127,9 @@ footer a:hover {
   position: absolute;
   left: 50%;
   bottom: 100%;
-  width: 180px;
+  width: 120px;
   padding: 5px 0;
-  margin-left: -90px;
+  margin-left: -60px;
   color: #fff;
   text-align: center;
   font-size: small;
@@ -158,7 +158,7 @@ footer a:hover {
   object-fit: cover;
 }
 
-#oradores, 
+#oradores,
 #lugar,
 #conviertete {
   scroll-margin-block-start: 90px;
@@ -171,6 +171,11 @@ footer a:hover {
 
   .encabezado {
     top: 44%;
+  }
+
+  .text-dotted .tooltiptext {
+    width: 180px;
+    margin-left: -90px;
   }
 }
 
