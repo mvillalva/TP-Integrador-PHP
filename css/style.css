@@ -71,15 +71,8 @@
   color: white;
 }
 
-.encabezado-parrafo {
-  font-weight: 500;
-  white-space: pre-line;
-}
-
-.img-position {
-  position: relative;
-  height: 100vh;
-  object-fit: cover;
+.encabezado-parrafo {  
+  font-weight: 500;  
 }
 
 .bg-blue {
@@ -177,6 +170,10 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
+  .encabezado-parrafo {
+    width: 550px;
+  }
+
   .pe-sm-6 {
     padding-right: 6rem !important;
   }
