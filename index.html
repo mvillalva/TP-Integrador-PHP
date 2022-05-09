@@ -32,7 +32,7 @@
               <a class="nav-link " href="#conviertete" data-tipo="item-menu">Convíertete en orador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-green" href="#">Comprar tickets</a>
+              <a class="nav-link text-green" href="#tickets" data-tipo="item-menu">Comprar tickets</a>
             </li>          
           </ul>
         </div>
@@ -54,7 +54,7 @@
           </div>
           <div class="encabezado-botones">
             <a href="#conviertete" class="btn btn-outline-light">Quiero ser orador</a>
-            <a href="#" class="btn btn-green">Comprar tickets</a>
+            <a href="#tickets" class="btn btn-green">Comprar tickets</a>
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@
       <p class="text-uppercase text-center">Conoce a los</p>
       <h3 class="text-uppercase text-center">Oradores</h3>
       <div class="d-flex justify-content-center align-items-center align-items-md-start flex-column flex-md-row">
-        <div class="card m-3">
+        <div class="card card-18 m-3">
           <img src="img/steve.jpg" class="card-img-top" alt="Steve">
           <div class="card-body">
             <span class="badge bg-warning text-dark">JavaScript</span>
@@ -73,7 +73,7 @@
             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa delectus aut sed maiores, reprehenderit nam optio quam harum voluptas obcaecati, repellat laudantium fuga error sit consequatur sunt hic vitae.</p>            
           </div>
         </div>
-        <div class="card m-3">
+        <div class="card card-18 m-3">
           <img src="img/bill.jpg" class="card-img-top" alt="Bill">
           <div class="card-body">
             <span class="badge bg-warning text-dark">JavaScript</span>
@@ -82,7 +82,7 @@
             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo adipisci laudantium laboriosam asperiores similique esse. Tenetur inventore repudiandae fugiat ex, dolor sapiente, ea vitae id deserunt neque dolorem esse ad?</p>            
           </div>
         </div>
-        <div class="card m-3">
+        <div class="card card-18 m-3">
           <img src="img/ada.jpeg" class="card-img-top" alt="Ada">
           <div class="card-body">
             <span class="badge bg-secondary">Negocios</span>
@@ -137,6 +137,88 @@
             <button type="submit" class="w-100 btn btn-light-green text-white">Enviar</button>
           </div>
         </div>
+      </form>
+    </section>
+
+    <section id="tickets" class="mt-4 mb-4">
+      <div class="d-flex justify-content-center align-items-center align-items-md-start flex-column flex-md-row text-center">
+        <div class="card m-1 border-primary">
+          <div class="card-body">
+            <h5 class="card-title mb-3 mt-2">Estudiante</h5>
+            <p class="card-text mb-3">Tienen un descuento</p>
+            <h5 class="card-title mb-3">80%</h5>
+            <div class="mb-2 text-secondary"><small>* presentar documentación</small></div>
+          </div>
+        </div>
+
+        <div class="card m-1 border-success">
+          <div class="card-body">
+            <h5 class="card-title mb-3 mt-2">Trainee</h5>
+            <p class="card-text mb-3">Tienen un descuento</p>
+            <h5 class="card-title mb-3">50%</h5>
+            <div class="mb-2 text-secondary"><small>* presentar documentación</small></div>
+          </div>
+        </div>
+
+        <div class="card m-1 border-warning">
+          <div class="card-body">
+            <h5 class="card-title mb-3 mt-2">Junior</h5>
+            <p class="card-text mb-3">Tienen un descuento</p>
+            <h5 class="card-title mb-3">15%</h5>
+            <div class="mb-2 text-secondary"><small>* presentar documentación</small></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="small text-uppercase text-center">Venta</div>
+      
+      <h2 class="text-center text-uppercase">Valor de ticket $200</h2>
+
+      <form id="form_ticket" action="" class="container w-md-50">
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-3">
+            <input id="nombre" class="form-control" type="text" placeholder="Nombre" required>
+          </div>
+          <div class="col-12 col-sm-6 mb-3">
+            <input id="apellido" class="form-control" type="text" placeholder="Apellido" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-3">
+            <input id="correo" class="form-control" type="email" placeholder="Correo" required>
+          </div>          
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-3">
+            <label for="cantidad">Cantidad</label>
+            <input id="cantidad" class="form-control" type="number" placeholder="Cantidad" required>
+          </div>
+          <div class="col-12 col-sm-6 mb-3">      
+            <label for="categoria">Categoría</label>      
+            <select name="categoria" id="categoria" class="form-select" required>
+              <option value="E" selected>Estudiante</option>
+              <option value="T">Trainee</option>
+              <option value="J">Junior</option>
+              <option value="O">Otra</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">            
+            <div class="alert alert-primary" role="alert" id="total">
+              Total a Pagar: $
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <button type="reset" class="w-100 btn btn-light-green text-white">Borrar</button>            
+          </div>
+          <div class="col-6">
+            <button type="submit" class="w-100 btn btn-light-green text-white">Resumen</button>
+          </div>
+        </div>
+
       </form>
     </section>
 
