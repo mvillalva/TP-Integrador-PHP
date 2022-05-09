@@ -141,58 +141,74 @@
     </section>
 
     <section id="tickets" class="mt-4 mb-4">
-      <div class="d-flex justify-content-center align-items-center align-items-md-start flex-column flex-md-row text-center">
-        <div class="card m-1 border-primary">
-          <div class="card-body">
-            <h5 class="card-title mb-3 mt-2">Estudiante</h5>
-            <p class="card-text mb-3">Tienen un descuento</p>
-            <h5 class="card-title mb-3">80%</h5>
-            <div class="mb-2 text-secondary"><small>* presentar documentación</small></div>
+
+      <form id="form_ticket" action="" class="container w-md-60">
+        <div class="row text-center">
+
+          <div class="col-md-4 m-1 m-md-0">
+            <div class="card border-primary">
+              <div class="card-body">
+                <h5 class="card-title mb-3 mt-2">Estudiante</h5>
+                <p class="card-text mb-3">Tienen un descuento</p>
+                <h5 class="card-title mb-3">80%</h5>
+                <div class="mb-2 text-secondary"><small>* presentar documentación</small></div>
+              </div>
+            </div>
           </div>
+
+          <div class="col-md-4 m-1 m-md-0">
+            <div class="card border-success">
+              <div class="card-body">
+                <h5 class="card-title mb-3 mt-2">Trainee</h5>
+                <p class="card-text mb-3">Tienen un descuento</p>
+                <h5 class="card-title mb-3">50%</h5>
+                <div class="mb-2 text-secondary"><small>* presentar documentación</small></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 m-1 m-md-0">
+            <div class="card border-warning">
+              <div class="card-body">
+                <h5 class="card-title mb-3 mt-2">Junior</h5>
+                <p class="card-text mb-3">Tienen un descuento</p>
+                <h5 class="card-title mb-3">15%</h5>
+                <div class="mb-2 text-secondary"><small>* presentar documentación</small></div>
+              </div>
+            </div>
+          </div>
+        
         </div>
 
-        <div class="card m-1 border-success">
-          <div class="card-body">
-            <h5 class="card-title mb-3 mt-2">Trainee</h5>
-            <p class="card-text mb-3">Tienen un descuento</p>
-            <h5 class="card-title mb-3">50%</h5>
-            <div class="mb-2 text-secondary"><small>* presentar documentación</small></div>
-          </div>
-        </div>
-
-        <div class="card m-1 border-warning">
-          <div class="card-body">
-            <h5 class="card-title mb-3 mt-2">Junior</h5>
-            <p class="card-text mb-3">Tienen un descuento</p>
-            <h5 class="card-title mb-3">15%</h5>
-            <div class="mb-2 text-secondary"><small>* presentar documentación</small></div>
-          </div>
-        </div>
-      </div>
+        <div class="small text-uppercase text-center">Venta</div>
       
-      <div class="small text-uppercase text-center">Venta</div>
-      
-      <h2 class="text-center text-uppercase">Valor de ticket $200</h2>
+        <h2 class="text-center text-uppercase">Valor de ticket $200</h2>
 
-      <form id="form_ticket" action="" class="container w-md-50">
         <div class="row">
+
           <div class="col-12 col-sm-6 mb-3">
             <input id="nombre" class="form-control" type="text" placeholder="Nombre" required>
           </div>
+
           <div class="col-12 col-sm-6 mb-3">
             <input id="apellido" class="form-control" type="text" placeholder="Apellido" required>
           </div>
+
         </div>
+
         <div class="row">
           <div class="col-12 mb-3">
             <input id="correo" class="form-control" type="email" placeholder="Correo" required>
           </div>          
         </div>
+
         <div class="row">
+
           <div class="col-12 col-sm-6 mb-3">
             <label for="cantidad">Cantidad</label>
             <input id="cantidad" class="form-control" type="number" placeholder="Cantidad" required>
           </div>
+
           <div class="col-12 col-sm-6 mb-3">      
             <label for="categoria">Categoría</label>      
             <select name="categoria" id="categoria" class="form-select" required>
@@ -202,7 +218,9 @@
               <option value="O">Otra</option>
             </select>
           </div>
+
         </div>
+
         <div class="row mb-3">
           <div class="col">            
             <div class="alert alert-primary" role="alert" id="total">
@@ -210,16 +228,19 @@
             </div>
           </div>
         </div>
+
         <div class="row mb-3">
           <div class="col-6">
             <button type="reset" class="w-100 btn btn-light-green text-white">Borrar</button>            
           </div>
+
           <div class="col-6">
             <button type="submit" class="w-100 btn btn-light-green text-white">Resumen</button>
           </div>
         </div>
 
       </form>
+      
     </section>
 
   </main>
