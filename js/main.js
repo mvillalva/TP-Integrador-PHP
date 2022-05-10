@@ -40,10 +40,10 @@ form_ticket.addEventListener('submit', e => {
     total = precio
   }
 
-  document.getElementById('total').innerHTML = 'Total a Pagar: $' + total
+  document.getElementById('total').innerHTML = total
 
 })
 
 form_ticket.addEventListener('reset', e => { 
-  document.getElementById('total').innerHTML = 'Total a Pagar: $' 
+  document.getElementById('total').innerHTML = '' 
 })
